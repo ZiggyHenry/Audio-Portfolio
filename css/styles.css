@@ -73,10 +73,12 @@
     --bs-border-radius-xl: 1rem;
     --bs-border-radius-2xl: 2rem;
     --bs-border-radius-pill: 50rem;
-    --bs-link-color: #f7211e;
-    --bs-link-hover-color: #a41a17;
+    --bs-link-color: #0ba8f7;
+    --bs-link-hover-color: #3a86ad;
     --bs-code-color: #ee0979;
     --bs-highlight-bg: #fff3cd;
+    /*Custom*/
+    --bs-audio-blue: #5579b9;
 }
 
 *,
@@ -2846,14 +2848,14 @@ textarea.form-control-lg {
 
 .btn-primary {
     --bs-btn-color: #fff;
-    --bs-btn-bg: #e2b51f;
+    --bs-btn-bg: #91a7cf;
     --bs-btn-border-color: var(--bs-btn-border-color);
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #b49019;
+    --bs-btn-hover-bg: #5165b4;
     --bs-btn-hover-border-color: var(--bs-btn-hover-bg);
     --bs-btn-focus-shadow-rgb: 241, 46, 141;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #be0761;
+    --bs-btn-active-bg: #1820b2;
     --bs-btn-active-border-color: #b3075b;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     --bs-btn-disabled-color: #fff;
@@ -8214,6 +8216,10 @@ textarea.form-control-lg {
     background-color: #20FA14 !important;
 }
 
+.bg-audio {
+    background-color: var(--bs-audio-blue) !important;
+}
+
 /*end custom*/
 
 .bg-transparent {
@@ -8335,7 +8341,7 @@ textarea.form-control-lg {
 /* This rule only activates if the screen is 'x'px wide or larger */
 @media screen and (min-width: 1200px) {
     .desktop-only-border {
-        --color: #FDF1B9;
+        --color: #96c1e1;
         border-left: 220px solid var(--color);
         border-right: 220px solid var(--color);
         border-top: 0px;
@@ -10924,12 +10930,11 @@ header.masthead {
     overflow: hidden;
     padding-top: calc(7rem + 72px);
     padding-bottom: 7rem;
-    background: linear-gradient(0deg, #f1cf56 0%, #ffcd24 100%); /*red on bottom? like the peaches?*/
+    background: linear-gradient(0deg, #6f8bc7 0%, var(--bs-audio-blue) 100%); /*red on bottom? like the peaches?*/
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
     background-size: cover;
-
     color: #fff;
 }
 header.masthead .masthead-content {
@@ -10946,7 +10951,7 @@ header.masthead .masthead-content .masthead-subheading {
         z-index: 0;
         position: absolute;
         border-radius: 100%;
-        background: linear-gradient(0deg, #dc3545 0%, #FDF1B9 100%);
+        background: linear-gradient(0deg, #6559d0 0%, #86b5cc 100%);
     }
 header.masthead .bg-circle-1 {
   height: 90rem;
